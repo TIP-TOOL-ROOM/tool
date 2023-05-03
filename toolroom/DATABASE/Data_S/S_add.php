@@ -1,6 +1,5 @@
 <?php
 
-	// Check If form submitted, insert form data into users table.
 	if(isset($_POST['Submit'])) {
 		$id_num = $_POST['id_num'];
 		$name = $_POST['name'];
@@ -10,14 +9,11 @@
 		$email = $_POST['email'];
 		$year = $_POST['year'];
 		
-		// include database connection file
 		include_once("S_Connect.php");
 				
-		// Insert user data into table
 		$result = mysqli_query($mysqli, "INSERT INTO users(id_num,name,address,age,program,email,year,level) 
 		VALUES('$id_num','$name','$address','$age','$program','$email','$year','$level')");
 		
-		// Show message when user added
 		echo "User added successfully. <a href='index.php'>View Users</a>";
 	}
 ?>
