@@ -11,5 +11,6 @@ CREATE TABLE `STUDENT` (
   `email` varchar(45) NOT NULL,
   `year` int(30) NOT NULL,
   `course_code` varchar(45) NOT NULL,
+  `level` varchar(45) NOT NULL,
   PRIMARY KEY  (`id_num`)
 );
