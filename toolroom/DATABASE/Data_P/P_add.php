@@ -9,7 +9,7 @@
 		$email = $_POST['email'];
 		
 		// include database connection file
-		include_once("config.php");
+		include_once("P_Connect.php");
 				
 		// Insert user data into table
 		$result = mysqli_query($mysqli, "INSERT INTO users(id_num,name,address,age,email) 

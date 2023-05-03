@@ -11,11 +11,11 @@
 		$year = $_POST['year'];
 		
 		// include database connection file
-		include_once("config.php");
+		include_once("S_Connect.php");
 				
 		// Insert user data into table
-		$result = mysqli_query($mysqli, "INSERT INTO users(id_num,name,address,age,program,email,year) 
-		VALUES('$id_num','$name','$address','$age','$program','$email','$year')");
+		$result = mysqli_query($mysqli, "INSERT INTO users(id_num,name,address,age,program,email,year,level) 
+		VALUES('$id_num','$name','$address','$age','$program','$email','$year','$level')");
 		
 		// Show message when user added
 		echo "User added successfully. <a href='index.php'>View Users</a>";
