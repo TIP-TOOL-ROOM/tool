@@ -7,6 +7,6 @@ CREATE TABLE `FACULTY` (
   `name` varchar(45) NOT NULL,
   `address` varchar(45) NOT NULL,
   `age` int(30) NOT NULL,
-  `email` varchar(45) NOT NULL
+  `email` varchar(45) NOT NULL,
   PRIMARY KEY  (`id_num`)
 );
